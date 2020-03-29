@@ -7,7 +7,7 @@ GitHub Self-hosted Runner Docker image based on Debian Buster.
 | Name           | Default Value | Description                        |
 | -------------- | ------------- | -----------------------------------|
 | `ACCOUNT` | "" | Github account. For example: mine is "romaws". |
-| `REPO` | "" | Github repository. For example: this repo is "docker-github-runner".  |
+| `REPO` | "" | Github repository. For example: this repo is "docker-github-actions-runner".  |
 | `ACCESS_TOKEN` | "" | Generate token with "repo" scope [here](https://github.com/settings/tokens/new). |
 | `RUNNER_NAME=` | `$HOSTNAME` | Set the runner name. Container hostname is default name. |
 
@@ -17,8 +17,8 @@ GitHub Self-hosted Runner Docker image based on Debian Buster.
 docker run -d \
     -e ACCESS_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx \
     -e ACCOUNT=romaws \
-    -e REPO=docker-github-runner \
-    romaws/gh_actions-runner
+    -e REPO=docker-github-actions-runner \
+    romaws/github-actions-runner
 ```
 
 ## Documentation
